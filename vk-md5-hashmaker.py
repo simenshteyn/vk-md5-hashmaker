@@ -83,7 +83,13 @@ def md5_hash_list(list: list):
         result.append(make_md5_hash(item))
     return result
 
-def save_file(file_name: str, list: list):
+def save_file(file_name:str, list:list):
+    """
+        Save list of strings to file
+    """
+    with open(file_name, 'w') as file:
+        for item in list:
+            file.write(item+'\n')
 
 while True:
     file_in = str(input('Enter file name to MD5-hash-it: '))
