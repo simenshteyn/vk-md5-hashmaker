@@ -76,7 +76,7 @@ def correct_list(list: list):
 
 def md5_hash_list(list: list):
     """
-        Makes list of emails and phones MD5-hashed list. Returns list.
+        Makes list of emails and phones MD5-hashed list. Returns list..
     """
     result = []
     for item in list:
